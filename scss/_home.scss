@@ -1,0 +1,64 @@
+#home {
+  // home section a
+  &__a {
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+
+      i {
+        padding-bottom: 0.5rem;
+      }
+      h3 {
+        color: $primary-color;
+      }
+      .skills-card {
+        padding: 1rem;
+        background-color: $bg-color1;
+        border-radius: 10px;
+        border-bottom: 3px solid $primary-color;
+      }
+    }
+  }
+
+  &__c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+
+      &__step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 18px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        line-height: 15px;
+        padding: 1rem;
+        transition: all 1s;
+      }
+      &__icon {
+        position: relative;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: #fff;
+        padding: 2rem;
+        text-align: center;
+
+        &:hover {
+          background-color: $primary-color;
+
+          .process__step {
+            background-color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+}

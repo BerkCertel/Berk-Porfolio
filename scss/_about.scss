@@ -1,0 +1,25 @@
+#about {
+  &-a {
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.2rem;
+
+      &__image {
+        border: 1px solid $light-color;
+        padding: 0.5rem;
+        border-radius: 3px;
+      }
+
+      &__bio {
+        border: 1px solid $light-color;
+        padding: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: inherit;
+      }
+    }
+  }
+}

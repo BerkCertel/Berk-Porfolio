@@ -1,0 +1,98 @@
+// main-nav
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__items {
+    display: flex;
+
+    li {
+      padding: 1rem 1.5rem;
+
+      .main-a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 0.5rem;
+        transition: all 0.7s;
+
+        &:hover {
+          border-color: $primary-color;
+          color: $primary-color;
+        }
+
+        &.active {
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .a-language {
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 15px;
+    padding: 0.2rem;
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+      transition: all 0.7s;
+    }
+  }
+}
+
+#header {
+  &__home {
+    background: $bg-image no-repeat center right/cover;
+    height: 100vh;
+    color: #fff;
+    border-bottom: 3px solid $primary-color;
+
+    .header-content {
+      text-align: center; 
+      padding-top: 30%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+
+    .typewrite {
+      display: block;
+    }
+  }
+
+  &__inner {
+    background: $bg-image no-repeat 40% 20% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $primary-color;
+  }
+}
+
+//icons
+
+.iconss {
+  display: grid;
+  align-self: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+
+  .icon-property {
+    color: #fff;
+
+    &:hover {
+      color: $primary-color;
+      transition: all 0.5s;
+    }
+  }
+}
